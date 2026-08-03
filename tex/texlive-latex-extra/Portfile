@@ -5,7 +5,7 @@ PortGroup           texlive 1.0
 
 name                texlive-latex-extra
 version             78229
-revision            3
+revision            4
 
 categories          tex
 maintainers         {dports @drkp}
@@ -47,7 +47,7 @@ perl5.branches      5.34
 
 # Pin Python scripts to correct interpreter. pygmentex imports the pygments
 # module.
-set python_branch   3.13
+set python_branch   3.14
 set python_ver      [string map {. {}} ${python_branch}]
 depends_run-append  port:python${python_ver} \
                     port:py${python_ver}-pygments
